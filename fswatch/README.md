@@ -8,14 +8,16 @@ Pre-requisites
 -----------------
 
 - Linux 2.6.13 or higher
-- SCons - see http://www.scons.
+- SCons (for build) - see http://www.scons.org
 
 Build
 -----------------
 Just type 'scons'
 
 You don't need scons ;-) You can build it manually, it's simple!
+<pre>
 gcc fswatch.c -o fswatch
+</pre>
 
 Usage
 ---------
