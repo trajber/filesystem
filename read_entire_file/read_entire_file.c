@@ -16,7 +16,7 @@ int main (int argc, char *argv[]) {
 	int status = fstat(fd, &buffer);
 	char *file_data = malloc(buffer.st_size);
 
-	memset(file_data, 0, sizeof(file_data));
+	memset(file_data, 0, buffer.st_size);
 
 	if (read(fd, file_data, buffer.st_size - 1) == -1) {
 		perror("Oops:");
